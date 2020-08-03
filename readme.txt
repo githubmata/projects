@@ -29,4 +29,11 @@ pytest -m ui --browser=chrome
 -classpath is correct due to upgraded python version on mac osx with a native python 2.x version
 -test ".py" runs without error on both sublime and terminal
 -install all import requested libraries
--
+
+*Python3 sublime-build file for Sublime Txt:
+{
+    "cmd": ["/usr/local/bin/python3", "-u", "$file"],
+    "cmd": ["/usr/bin/python3", "-u", "$file"],
+    "cmd": ["/usr/local/bin/pip"],
+    "cmd": ["/usr/local/bin/pytest"],
+}
