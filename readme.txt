@@ -12,7 +12,7 @@ TERMINAL
 
 Install updated Python which includes pip.
 TERMINAL
-brew install python@2
+brew install python@3
 
 
 TERMINAL
@@ -24,4 +24,9 @@ USAGE (defaults to chrome browser)
 pytest -m api
 pytest -m ui
 pytest -m ui --browser=chrome
-pytest -m ui --browser=firefox
+
+*Verify:
+-classpath is correct due to upgraded python version on mac osx with a native python 2.x version
+-test ".py" runs without error on both sublime and terminal
+-install all import requested libraries
+-
