@@ -23,8 +23,8 @@ namespace LoggingTest
         public void Log(LogLevel level, string message, Exception exception);
     }
     
-    //Sample class using the ILogger interface
-    public class FileLogger : Logger
+    //Implementing the ILogger interface
+    public class FileLogger : ILogger
     {
         //implement methods
         public void Log(LogLevel level, string message)
@@ -36,6 +36,13 @@ namespace LoggingTest
         {
             Conosole.WriteLine($"[{DateTime.Now}] [{level}]: {message}")
             Console.WriteLine($"  Exception: {exception}");
+            
+            //capture the data from request
+
+
+            //write the data to file
+            Console.WriteLine("2025" + "randomPatient" + .txt);
+
         }
     }
 
